@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>مركز الألعاب - السيارات 3D</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(135deg, #1e272e, #0f172a);
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            user-select: none;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            text-shadow: 0 0 12px rgba(52, 152, 219, 0.6);
+            text-align: center;
+        }
+
+        .menu-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 85%;
+            max-width: 340px;
+        }
+
+        .btn-menu {
+            padding: 16px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 14px;
+            cursor: pointer;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+            transition: transform 0.15s ease, background 0.2s ease;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+
+        .btn-endless {
+            background: #27ae60;
+        }
+        .btn-endless:active {
+            transform: scale(0.96);
+            background: #2196f3;
+        }
+
+        .btn-race {
+            background: #e67e22;
+        }
+        .btn-race:active {
+            transform: scale(0.96);
+            background: #d35400;
+        }
+
+        .btn-disabled {
+            background: #444;
+            color: #888;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🏎️ قائمة ألعاب السيارات 3D</h1>
+
+    <div class="menu-container">
+        <a href="game_endless.html" class="btn-menu btn-endless">🚘 اللعبة الأساسية (تفادي السيارات)</a>
+        <a href="game_race.html" class="btn-menu btn-race">🏁 طور السباق (المضمار والمنعطفات)</a>
+        <button class="btn-menu btn-disabled">🌐 أونلاين (قريباً)</button>
+    </div>
+
+</body>
+</html>
